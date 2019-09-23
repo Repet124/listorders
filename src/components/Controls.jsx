@@ -15,23 +15,23 @@ handlerReset = () => {
 }
 
 render() {
-	let diabled = {
+	let disabled = {
 		left: false,
 		right: false,
 		reset: false
 	}
-	if (this.props.diabled) {
-		diabled[this.props.diabled] = true;
+	if (this.props.disabled) {
+		disabled[this.props.disabled] = true;
 	}
 	return (
 		<div>
-		<button diabled={diabled.left} onClick={this.handlerLeft}>
+		<button disabled={disabled.left} onClick={this.handlerLeft}>
 			Туда
 		</button>
-		<button diabled={diabled.reset} onClick={this.handlerReset}>
+		<button disabled={disabled.reset} onClick={this.handlerReset}>
 			В начало
 		</button>
-		<button diabled={diabled.right} onClick={this.handlerRight}>
+		<button disabled={disabled.right} onClick={this.handlerRight}>
 			Сюда
 		</button>
 		</div>
