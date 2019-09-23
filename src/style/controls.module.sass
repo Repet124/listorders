@@ -1,0 +1,20 @@
+.controls
+	display: flex
+	justify-content: space-between
+	margin-top: 10px
+	width: 100%
+
+.btn
+	width: 25%
+	color: #fff
+	font-size: 1.5rem
+	border: 2px solid #fff
+	background: transparent
+	&:hover:not([disabled])
+		color: #4f5059
+		background: #fff
+		cursor: pointer
+
+.btn[disabled]
+	border-color: #5e5e5e
+	color: #5e5e5e

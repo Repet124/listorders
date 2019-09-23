@@ -1,4 +1,5 @@
 import React from 'react';
+import style from '../style/controls.module.sass';
 
 class Controls extends React.Component {
 
@@ -24,14 +25,14 @@ render() {
 		disabled[this.props.disabled] = true;
 	}
 	return (
-		<div>
-		<button disabled={disabled.left} onClick={this.handlerLeft}>
+		<div className={style.controls}>
+		<button disabled={disabled.left} className={style.btn} onClick={this.handlerLeft}>
 			Туда
 		</button>
-		<button disabled={disabled.reset} onClick={this.handlerReset}>
+		<button disabled={disabled.reset} className={style.btn} onClick={this.handlerReset}>
 			В начало
 		</button>
-		<button disabled={disabled.right} onClick={this.handlerRight}>
+		<button disabled={disabled.right} className={style.btn} onClick={this.handlerRight}>
 			Сюда
 		</button>
 		</div>
