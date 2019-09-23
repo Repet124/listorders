@@ -1,0 +1,12 @@
+{
+    "name": "root/listorders.local",
+    "require": {
+        "shopexpress/apiclient": "2.0.1"
+    },
+    "authors": [
+        {
+            "name": "Oleg Bondarenko",
+            "email": "hlop4ik124@gmail.com"
+        }
+    ]
+}
